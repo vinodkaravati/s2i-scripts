@@ -13,7 +13,7 @@ config_s2i
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 DATE=`date "+%F"`
-echo "this is $DATE" >> ./info.html
+echo "today's date is $DATE" >> ./info.html
 echo "---> Creating info page"
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
